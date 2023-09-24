@@ -160,6 +160,28 @@
         @media (max-width: 768px) {
             .container {
                 grid-template-columns: 1fr; /* Single column on small screens */
+                padding: 15px 5%; /* Reduce the padding on small screens */
+            }
+
+            .larger-video-box {
+                grid-row: auto; /* Reset grid row to default */
+            }
+
+            .box-container {
+                grid-template-columns: 1fr; /* Single column for boxes on small screens */
+            }
+
+            .box {
+                padding: 20px; /* Adjust box padding for better mobile spacing */
+            }
+
+            .video-container {
+                padding-bottom: 0; /* Remove padding-bottom for video container on mobile */
+            }
+
+            .video-container video {
+                top: 0; /* Adjust video position on mobile */
+                height: 100%; /* Full height for the video */
             }
         }
     </style>
@@ -168,7 +190,7 @@
     <div class="container">
         <h1 class="heading">Testimonials</h1>
         <div class="box-container">
-            <div class="box" style="background-color: rgb(18, 43, 89); color: white; border-radius: 30px;"">
+            <div class="box" style="background-color: rgb(18, 43, 89); color: white; border-radius: 30px;">
                 <p style="color: #fff;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p><br>
                 <p style="color: #fff;">Amil Nasar A</p>
                 <p style="color: #fff;">Class 7</p>
@@ -272,3 +294,4 @@
     </script>
 </body>
 </html>
+
