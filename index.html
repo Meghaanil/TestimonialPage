@@ -157,39 +157,42 @@
             font-size: 24px;
         }
 
-               
+       
 @media (max-width: 768px) {
+    /* Adjust the larger video box to take the full width */
     .larger-video-box {
-        order: 2; 
-        padding: 15px;
-        background-color: rgb(74, 53, 16); 
-        width: 100%;
-        max-width: none; 
+        order: 2; /* Change the order to display below the small boxes */
+        padding: 15px; /* Add some padding for spacing */
+        background-color: rgb(74, 53, 16); /* Set background color */
+        width: 100%; /* Take the full width */
+        max-width: none; /* Remove max-width to take the full available width */
     }
 
-    
+    /* Rest of the media query styles for the video container */
     .video-container {
-        padding-bottom: 56.25%; 
+        padding-bottom: 56.25%; /* Maintain the aspect ratio */
     }
 
     .video-container video {
-        position: relative; 
-        width: 100%;
-        height: auto; 
+        position: relative; /* Change position to relative */
+        width: 100%; /* Adjust width for full width */
+        height: auto; /* Allow the video to resize proportionally */
         
     }
     
-    
+    /* Adjust the container padding for mobile spacing */
     .container {
-        padding: 15px 5%;
+        padding: 15px 5%; /* Adjust container padding for mobile spacing */
     }
     
-    
+    /* Ensure the box container remains single column */
     .box-container {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr; /* Single column on small screens */
     }
 }
 
+
+        
     </style>
 </head>
 <body>
@@ -300,4 +303,3 @@
     </script>
 </body>
 </html>
-
