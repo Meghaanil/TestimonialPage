@@ -157,33 +157,39 @@
             font-size: 24px;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                grid-template-columns: 1fr; /* Single column on small screens */
-                padding: 15px 5%; /* Reduce the padding on small screens */
-            }
+               
+@media (max-width: 768px) {
+    .larger-video-box {
+        order: 2; 
+        padding: 15px;
+        background-color: rgb(74, 53, 16); 
+        width: 100%;
+        max-width: none; 
+    }
 
-            .larger-video-box {
-                grid-row: auto; /* Reset grid row to default */
-            }
+    
+    .video-container {
+        padding-bottom: 56.25%; 
+    }
 
-            .box-container {
-                grid-template-columns: 1fr; /* Single column for boxes on small screens */
-            }
+    .video-container video {
+        position: relative; 
+        width: 100%;
+        height: auto; 
+        
+    }
+    
+    
+    .container {
+        padding: 15px 5%;
+    }
+    
+    
+    .box-container {
+        grid-template-columns: 1fr; 
+    }
+}
 
-            .box {
-                padding: 20px; /* Adjust box padding for better mobile spacing */
-            }
-
-            .video-container {
-                padding-bottom: 0; /* Remove padding-bottom for video container on mobile */
-            }
-
-            .video-container video {
-                top: 0; /* Adjust video position on mobile */
-                height: 100%; /* Full height for the video */
-            }
-        }
     </style>
 </head>
 <body>
